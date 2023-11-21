@@ -79,6 +79,23 @@ h3 { text-align: center;
 	font-size: 42px;
 }
 
+h2 { font-size: 38px;
+}
+
+h4 { font-size: 36px;;
+}
+
+h5 { font-size: 28px;
+}
+
+.extra-name {
+	font-size: 28px;
+ }
+
+.extra-price {
+    font-size: 28px;
+ }
+
 body{
 	font-family: 'Roboto', sans-serif;
 	margin-top: 150px;
