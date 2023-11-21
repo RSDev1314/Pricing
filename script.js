@@ -86,7 +86,7 @@ $('#laundry-col').on('click', function() {
 		document.getElementById("laundry").src = "Photo/wood.png";
 	} else {
 		$$.removeClass('on');
-		document.getElementById("laundry").src = "Photo/wood";
+		document.getElementById("laundry").src = "Photo/wood.png";
 	}
 	calculatesubtotal();
 })
