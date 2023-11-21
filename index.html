@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>PRISTINED&reg; Pricing Calculator</title>
+  <link rel="icon" type="Photo/favicon.png" href="Photo/favicon.png">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+<!-- partial:index.partial.html -->
+<div class="col-sm-12 quote-calc col-xs-12" id="quote-calc">
+	<h3>Pristined&reg; Cleaning Price Calculator</h3>
+	<div class="col-sm-6">
+		<div class="form-group">
+			<h4>Bedrooms (please select):</h4>
+			<select class="form-control" id="beds">
+                <option value="120.00">1 Bedroom</option>
+                <option value="140.00">2 Bedrooms</option>
+                <option value="160.00">3 Bedrooms</option>
+                <option  value="180.00">4 Bedrooms</option>
+                <option  value="200.00">5 Bedrooms</option>
+                <option  value="220.00">6 Bedrooms</option>
+              </select>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="form-group">
+			<h4>Bathrooms (please select):</h4>
+			<select class="form-control" id="baths">
+                <option value="0">1 Bathroom</option>
+                <option value="1">2 Bathrooms</option>
+                <option value="2">3 Bathrooms</option>
+                <option value="3">4 Bathrooms</option>
+				<option value="4">5 Bathrooms</option>
+				<option value="5">6 Bathrooms</option>
+              </select>
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<div class="row-extras">
+			<h4>Do you want to add any Extras?</h4>
+			<h5>(Click a tile to add it to your estimate)</h5>
+			<div class="form-group" id="extras">		
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="move-col">
+							<img src="Photo/Detailed.svg" title="move" id="move"/>
+							<div class="extra-name">Detailed Cleaning</div>
+							<div class="extra-price">$85</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="fridge-col">
+							<img src="Photo/fridge.png" title="fridge" id="fridge"/>
+							<div class="extra-name">Clean Fridge</div>
+							<div class="extra-price">$15</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6">
+						<div class="extra-container" id="oven-col">
+							<img src="Photo/oven.png" title="oven" id="oven"/>
+							<div class="extra-name">Clean Oven</div>
+							<div class="extra-price">$15</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-sm-offset-2 col-xs-6">
+						<div class="extra-container" id="dish-col">
+							<img src="Photo/cabinet.png" title="dish" id="dish"/>
+							<div class="extra-name">Inside of Cabinet</div>
+							<div class="extra-price">$15</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
+						<div class="extra-container" id="laundry-col">
+							<img src="Photo/wood.png" title="laundry" id="laundry"/>
+							<div class="extra-name">Baseboards</div>
+							<div class="extra-price">$35</div>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6 col-sm-12 col-xs-12">
+		<div class="row-often">
+			<h4>How Often?</h4>
+			<h5>(Click a tile to select your frequency)</h5>
+			<div class="form-group">
+				<div class="col-occur col-sm-6 col-xs-6 on" id="col-once-off">
+					<img src="Photo/circle-1.png" title="move" id="once-off" />
+					<div class="disc">One-Time Cleaning</div>
+				</div>
+				<div class="col-occur col-sm-6 col-xs-6" id="col-weekly">
+					<img src="Photo/weeklyhighres.png" title="fridge" id="weekly" />
+					<div class="disc">_____</div>
+				</div>
+				<div class="col-occur col-sm-6 col-xs-6" id="col-fortnightly">
+					<img src="Photo/bi-weeklyhighres.png" title="oven" id="fortnightly" />
+					<div class="disc">_____</div>
+				</div>
+				<div class="col-occur col-sm-6 col-xs-6" id="col-monthly">
+					<img src="Photo/monthlyhighres.png" title="dishes" id="monthly" />
+					<div class="disc">_____</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-xs-12 clearfix quote-col ">
+		<div class="quote">
+			<h2>Your Estimate:</h2>
+			<span class="total" id="total">
+				$199.95
+        </span>
+			<a href="Appointments://" title="Book Now" data-options="thumbnail: ''">BOOK NOW</a>
+		</div>
+	</div>
+	</div>
+	
+	
+</div>
+<!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
